@@ -45,6 +45,7 @@ export const TwitterContextProvider = (props) => {
     fetchedPosts.sort((a, b) => b.createdAt - a.createdAt);
 
     setPosts(fetchedPosts);
+    console.log(process.env.FIREBASE_API_KEY);
   };
 
   const contextValue = {

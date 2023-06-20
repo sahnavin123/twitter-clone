@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCH_Kvoia2UT3MQM1mim7pTfC4aW2suWas",
-  authDomain: "twitter-clone-11f33.firebaseapp.com",
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
   projectId: "twitter-clone-11f33",
-  storageBucket: "twitter-clone-11f33.appspot.com",
-  messagingSenderId: "179195642418",
-  appId: "1:179195642418:web:cb5aaf16f4ad4e3f23b22b",
-  measurementId: "G-613EQ15FLR",
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID,
+  measurementId: process.env.FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
